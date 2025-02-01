@@ -1,8 +1,12 @@
+
 #include <stdio.h>
 
 // TODO: Implement the conversion functions
 float celsiusToFahrenheit(float celsius);
 float fahrenheitToCelsius(float fahrenheit);
+
+
+
 
 int main() {
     int choice;
@@ -19,10 +23,10 @@ int main() {
 
     if (choice == 1) {
         // TODO: Call celsiusToFahrenheit and display result
-        printf("Conversion not implemented yet.\n");
+        printf("Fahrenheit : %f\n",celsiusToFahrenheit(temp));
     } else if (choice == 2) {
         // TODO: Call fahrenheitToCelsius and display result
-        printf("Conversion not implemented yet.\n");
+        printf("Celsius: %f\n",fahrenheitToCelsius(temp));
     } else {
         printf("Invalid choice!\n");
     }
@@ -32,10 +36,15 @@ int main() {
 
 // TODO: Implement the celsiusToFahrenheit function
 float celsiusToFahrenheit(float celsius) {
-    return 0.0; 
+     float convertedTemp= (9/5.0)*celsius+32;
+    return convertedTemp;
+    
 }
 
 // TODO: Implement the fahrenheitToCelsius function
 float fahrenheitToCelsius(float fahrenheit) {
-    return 0.0; 
-}
+    float convertedTemp= (fahrenheit- 32 )*(9.0/5);
+    return convertedTemp;
+} 
+    
+
